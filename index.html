@@ -82,11 +82,11 @@
 				color: #fff;
 			}
 			.jumbo-2{
-				background-image: url('img/bitcoins.jpeg');
+				background-image: url('img/bitcoins.jpg');
 				color: #fff;
 			}
 			.jumbo-3{
-				background-image: url('img/city.jpeg');
+				background-image: url('img/city.jpg');
 				color: #fff;
 			}
 			.jumbotron hr{
@@ -187,10 +187,15 @@
 
 			#our-strategy{
 				margin-top: 1rem;
-				background-color: #e9ecef;
+				background-color: #f1f1f1;
 			}
 			#our-strategy h2{
 				margin-top: 1rem;
+			}
+			#our-strategy .col-md-4{
+				background-image: url('img/we_wuz_kangz.jpg');
+				background-size: cover;
+				background-position: center center;
 			}
 			
 			/*----------------------
@@ -207,13 +212,20 @@
 			#why-choose-us h2{
 				margin-top: 1rem;
 			}
+			#why-choose-us .col-md-4{
+				background-image: url('img/pelican.jpeg');
+				background-size: auto 100%;
+				background-position: center center;
+				background-repeat: no-repeat;
+				min-height: 200px;
+			}
 			
 			/*----------------------
 				   contact us
 			  ----------------------*/
 
 			#contact-us{
-				background-color: #e9ecef;
+				background-color: #f1f1f1;
 				padding-top: 2rem;
 				padding-bottom: 2rem;
 			}
@@ -286,6 +298,32 @@
 				#easy-123 .card{
 					margin-bottom: 2rem;
 				}
+
+				/* our strategy */
+				#our-strategy .row{
+					position: relative;
+				}
+				#our-strategy .col-md-8{
+					width: 100%;
+					display: block;
+					float: left;
+					padding-left: calc((100vw - 768px)/2 + 45px);
+					max-width: calc((100vw - 768px)/2 + 492px);
+					padding-top: 2rem;
+					padding-bottom: 2rem;
+				}
+				#our-strategy .col-md-4{
+					position: absolute;
+					right: 0;
+					max-width: none;
+					height: 100%;
+					width: calc((100vw - 768px)/2 + 266px);
+				}
+
+				/* why choose us */
+				#why-choose-us .col-md-4{
+					background-size: 100% auto;
+				}
 			}
 
 			/* Large devices (desktops, 992px and up) */
@@ -300,6 +338,15 @@
 					font-size: 38px;
 					right: calc(50% - 480px);
 				}
+
+				/* our strategy */
+				#our-strategy .col-md-8{
+					max-width: calc((100vw - 992px)/2 + 661px);
+					padding-left: calc((100vw - 992px)/2 + 45px);
+				}
+				#our-strategy .col-md-4{
+					width: calc((100vw - 992px)/2 + 331px);
+				}
 			}
 
 			/* Extra large devices (large desktops, 1200px and up) */
@@ -313,6 +360,15 @@
 				.swiper-button-next{
 					font-size: 38px;
 					right: calc(50% - 600px);
+				}
+
+				/* our strategy */
+				#our-strategy .col-md-8{
+					max-width: calc((100vw - 1200px)/2 + 780px);
+					padding-left: calc((100vw - 1200px)/2 + 45px);
+				}
+				#our-strategy .col-md-4{
+					width: calc((100vw - 1200px)/2 + 410px);
 				}
 			}
 
@@ -453,9 +509,9 @@
 					<div class="col-md-4 d-md-none" style="background-color:#6d6d6d;min-height: 200px;"></div>
 					<div class="col-md-8">
 						<h2>A Strategy That Works</h2>
-						<p>If you try to trade this microcap bubble on your own, you are going to lose money</p>
-						<p>If you didn't even know there was going to be a microcap bubble, then you are definitely going to lose money in crypto moving forward.</p>
-						<p>We identified a market sector that is sure to make money.</p>
+						<p>If you try to trade this microcap bubble on your own, you are going to lose money. If you didn't even know there was going to be a microcap bubble, then you are definitely going to lose money in crypto moving forward. We identified a market sector that is sure to make money.</p>
+						<p>Nulla aliquet porttitor lacus luctus. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Facilisis sed odio morbi quis commodo odio. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh.</p>
+						<p>Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. Massa id neque aliquam vestibulum morbi blandit. Arcu vitae elementum curabitur vitae nunc sed. Mi sit amet mauris commodo quis. Ultricies tristique nulla aliquet enim tortor at auctor.</p>
 					</div>
 					<div class="col-md-4 d-none d-md-block" style="background-color:#6d6d6d;min-height: 200px;"></div>
 				</div>
@@ -465,8 +521,6 @@
 			<article class="container" id="why-choose-us">
 				<div class="row">
 					<div class="col-md-4">
-						<!-- <img src="" alt="Clients shaking hands with a banker"> -->
-						<div style="height:100%; min-height: 200px; width:100%; max-width: 150px; background-color:#6d6d6d; margin: auto;"></div>
 					</div>
 					<div class="col-md-8">
 						<h2>Why Choose Pelican Capital</h2>
