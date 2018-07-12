@@ -53,6 +53,15 @@
 #contact-us textarea{
 	height: 7.75rem;
 }
+#submit-error{
+	display: block !important;
+	position: absolute;
+    left: 0px;
+    opacity: 0;
+}
+#submit-error.fade-in{
+	opacity: 1 !important;
+}
 
 /*----------------------
 	      footer
