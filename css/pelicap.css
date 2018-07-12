@@ -100,4 +100,10 @@ footer{
 }
 
 /* Large devices (desktops, 992px and up) */
-/*@media (min-width: 992px) { }*/
+@media (min-width: 992px) {
+
+	/* contact us */
+	#contact-us textarea{
+		height: 5.75rem;
+	}
+}
