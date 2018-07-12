@@ -1,0 +1,103 @@
+/*-----------------------------------------------
+			
+			Pelican Capital CSS 
+
+  -----------------------------------------------*/
+
+/* buttons */
+.btn{
+	border-radius: 0;
+	background: rgba(255,255,255,0.25);
+}
+/* buttons on light backgrounds */
+.btn-primary{
+	color: #6d6d6d;
+	border-color: #6d6d6d;
+	border-width: 1px;
+	border-style: solid;
+}
+.btn-primary:hover{
+	background: rgba(255,255,255,0.4);
+	color: #000;
+	border-color: #000;
+}
+/* buttons on dark backgrounds */
+.btn-secondary{
+	color: #fff !important;
+	border-color: #eee;
+	border-width: 1px;
+	border-style: solid;
+}
+.btn-secondary:hover{
+	background: rgba(255,255,255,0.32);
+	border-color: #fff;
+}
+			
+/*----------------------
+	   contact us
+  ----------------------*/
+
+#contact-us{
+	background-color: #f1f1f1;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+#contact-us h2{
+	text-align: center;
+}
+#contact-us h5{
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 2rem;
+}
+#contact-us textarea{
+	height: 7.75rem;
+}
+
+/*----------------------
+	      footer
+  ----------------------*/
+
+footer{
+	background-color: #6d6d6d;
+	color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: .75rem;
+    text-align: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	/* navbar */
+	.navbar .container{
+		position: relative;
+	}
+	.navbar-toggler{
+		display: none;
+	}
+	.navbar-collapse{
+		display: inherit;
+		float: right;
+		max-width: 500px;
+	}
+	.navbar-nav{
+		display: block;
+		position: absolute;
+		right: 0;
+	}
+	.nav-item{
+		float: right;
+	}
+	.nav-link{
+		display: inline-block;
+		padding-left: 1.5rem !important;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+/*@media (min-width: 992px) { }*/

@@ -5,43 +5,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title>Pelican Capital - cryptocurrency consultants</title>
+		<title>Pelican Capital - Cryptocurrency Consultants</title>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/swiper/swiper.min.css">
 		<link rel="stylesheet" href="css/icomoon/style.css">
+		<link rel="stylesheet" href="css/pelicap.css">
 
 		<style>
-
-			/* buttons */
-			.btn{
-				border-radius: 0;
-				background: rgba(255,255,255,0.25);
-			}
-			/* buttons on light backgrounds */
-			.btn-primary{
-				color: #6d6d6d;
-				border-color: #6d6d6d;
-				border-width: 1px;
-				border-style: solid;
-			}
-			.btn-primary:hover{
-				background: rgba(255,255,255,0.4);
-				color: #000;
-				border-color: #000;
-			}
-			/* buttons on dark backgrounds */
-			.btn-secondary{
-				color: #fff !important;
-				border-color: #eee;
-				border-width: 1px;
-				border-style: solid;
-			}
-			.btn-secondary:hover{
-				background: rgba(255,255,255,0.32);
-				border-color: #fff;
-			}
 
 
 			/*----------------------
@@ -219,39 +191,43 @@
 				background-repeat: no-repeat;
 				min-height: 200px;
 			}
-			
-			/*----------------------
-				   contact us
-			  ----------------------*/
 
-			#contact-us{
-				background-color: #f1f1f1;
-				padding-top: 2rem;
+			/*----------------------
+				     about us
+			  ----------------------*/
+			#about-us{
 				padding-bottom: 2rem;
-			}
-			#contact-us h2{
 				text-align: center;
+				position: relative;
+				/*background-color: #6d6d6d*/
 			}
-			#contact-us h5{
-				text-align: center;
-				font-weight: 300;
-				margin-bottom: 2rem;
+			#about-us h2{
+				padding-top: 2rem;
+				margin-bottom: 1.35rem;
 			}
-			#contact-us textarea{
-				height: 7.75rem;
+			#about-us img{
+				height: 180px;
+				width: 180px;
+				border-radius: 50%;
+				margin-bottom: 1rem;
 			}
-			
-			/*----------------------
-				      footer
-			  ----------------------*/
-
-			footer{
-				background-color: #6d6d6d;
-				color: #ffffff;
-			    padding-top: 2rem;
-			    padding-bottom: 2rem;
-			    font-size: .75rem;
-			    text-align: center;
+			#about-us hr{
+				width: 40%;
+				border-top: 2px solid #6d6d6d;
+			}
+			#about-us a{
+				display: block;
+				margin-bottom: .4rem;
+				text-decoration: none !important;
+				color: #0077B5 !important;
+				font-size: 20px;
+			}
+			#about-us p{
+				text-align: left;
+				margin-bottom: 2.5rem;
+			}
+			#about-us .col-md-4:last-of-type p{
+				margin-bottom: 0;
 			}
 
 
@@ -260,31 +236,6 @@
 
 			/* Medium devices (tablets, 768px and up) */
 			@media (min-width: 768px) {
-
-				/* navbar */
-				.navbar .container{
-					position: relative;
-				}
-				.navbar-toggler{
-					display: none;
-				}
-				.navbar-collapse{
-					display: inherit;
-					float: right;
-					max-width: 500px;
-				}
-				.navbar-nav{
-					display: block;
-					position: absolute;
-					right: 0;
-				}
-				.nav-item{
-					float: right;
-				}
-				.nav-link{
-					display: inline-block;
-					padding-left: 1.5rem !important;
-				}
 
 				/* jumbotron */
 				.swiper-button-prev{
@@ -429,7 +380,7 @@
 						<hr class="my-4">
 					  	<p>Speak to one of our consultants today</p>
 					  	<p class="lead">
-					    	<a class="btn btn-secondary btn-lg" href="#" role="button">Learn more</a>
+					    	<a class="btn btn-secondary btn-lg" href="#about-us" role="button">Learn more</a>
 					  	</p>
 					</div>
 				</div>
@@ -577,6 +528,39 @@
 						<button type="submit" class="btn btn-primary">Submit</button>
 					</fieldset>
 				</form>
+			</div>
+		</section>
+
+		<!-- about us -->
+		<section id="about-us">
+			<h2>The Team</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/Spencer_Park.jpg" alt="Spencer Park, Managing Partner at Pelican Capital">
+						<h5>Spencer Park</h5>
+						<h6>Managing Partner</h6>
+						<hr>
+						<a href="https://www.linkedin.com/in/spencer-park-70876854/"><span class="icon icon-linkedin"></span></a>
+						<p>Serial Entrepreneur and business opperations specialist Spencer Park brings his expertise and savvy to Pelican capital as he supports our research effors and serves an overarching management role for Pelican Capital.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="img/Michael_Giannini.jpg" alt="Michael Giannini, Managing Partner at Pelican Capital">
+						<h5>Michael Giannini</h5>
+						<h6>Quantitative Analyst</h6>
+						<hr>
+						<a href="https://www.linkedin.com/in/michael-giannini-512b98112/"><span class="icon icon-linkedin"></span></a>
+						<p>Former web developer and financial analyst, Michael Giannini made a modest fortune trading crypto currencies since 2013. He is responsible for the mathematical and technical analysis of client assets for Pelican Capital.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="img/Zach_Chang.jpg" alt="Zach Chang, Managing Partner at Pelican Capital">
+						<h5>Zach Chang</h5>
+						<h6>Consultant</h6>
+						<hr>
+						<a href="https://www.linkedin.com/in/zack-chang/"><span class="icon icon-linkedin"></span></a>
+						<p>After his work launching several successful ICO, Zach Chang joins Pelican Capital as a consultant, helping our clients navigate the often mirky waters of the international ICO market.</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
