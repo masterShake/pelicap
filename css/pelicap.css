@@ -42,6 +42,9 @@
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
+#contact-us .container{
+	position: relative;
+}
 #contact-us h2{
 	text-align: center;
 }
@@ -61,6 +64,39 @@
 }
 #submit-error.fade-in{
 	opacity: 1 !important;
+}
+/* success message */
+#contact-success{
+	position: absolute;
+	height: 100%;
+	width: calc(100% - 30px);
+	background: #f1f1f1;
+	text-align: center;
+	z-index: 1;
+	display: none;
+}
+#contact-success h2{
+	padding-top: 50px;
+    padding-bottom: 24px;
+}
+#contact-success h4{
+	padding-top: 24px;
+}
+#checkmark-success{
+	background-color: #28a745;
+	border-radius: 50%;
+	box-shadow: 2px 2px 4px #999;
+	height: 60px;
+	width: 60px;
+	font-size: 38px;
+	padding-top: 11px;
+	color: #fff;
+	margin: auto;
+	transition: 400ms ease-in-out;
+	transform: scale(.05, .05);
+}
+#checkmark-success.fade-it-in{
+	transform: scale(1, 1);
 }
 
 /*----------------------
