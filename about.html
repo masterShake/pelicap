@@ -36,16 +36,65 @@
 				background-repeat: no-repeat;
 				opacity: 0.25;
 			}
-			
+			.jumbotron .container{
+				display: table;
+				width: 100%;
+				height: 16rem;
+			}
+			.jumbotron .container>div{
+				display: table-cell;
+				vertical-align: middle;
+			}
 
-			 /* Small devices (landscape phones, 576px and up) */
-			@media (min-width: 576px) { }
+			/*----------------------
+				  birds eye view
+			  ----------------------*/
+			#birds-eye-view .d-md-none{
+				height: 180px;
+				width: 100%;
+				background-image: url('img/city.jpg');
+				background-size: cover;
+				background-position: center center;
+				margin-left: 15px;
+				margin-right: 15px;
+				margin-bottom: 1.25rem;
+			}
+			#birds-eye-view .centered-img{
+				display: table;
+				width: 100%;
+				height: 100%;
+			}
+			#birds-eye-view .centered-img>div{
+				display: table-cell;
+				vertical-align: middle;
+			}
+			#birds-eye-view .centered-img>div>div{
+				background-image: url('img/city.jpg');
+				background-size: cover;
+				background-position: center center;
+				height: 200px;
+			}
+
+			/* Small devices (landscape phones, 576px and up) */
+			@media (min-width: 576px) {
+
+				/* jumbotron */
+				.jumbo-bg{
+					background-size: 152% auto;
+				}
+			}
 
 			/* Medium devices (tablets, 768px and up) */
 			@media (min-width: 768px) {
 
 				/* jumbotron */
 				/*.jumbotron*/
+
+				/* birds-eye-view */
+				#birds-eye-view .col-md-8{
+					padding-top: 2rem;
+    				padding-bottom: 2rem;
+				}
 			}
 
 			/* Large devices (desktops, 992px and up) */
@@ -96,14 +145,33 @@
 		<div class="jumbotron">
 			<div class="jumbo-bg"></div>
 			<div class="container">
-	  			<h1 class="display-4">Digital Gold</h1>
-				<p class="lead">Beat the market and get ahead</p>
-				<hr class="my-4">
-				<p>Pelican Capital offers a variety of services to help you manager your portfolio</p>
+				<div>
+		  			<h1 class="display-4">Digital Gold</h1>
+					<p class="lead">Beat the market and get ahead</p>
+					<hr class="my-4">
+					<p>Pelican Capital offers a variety of services to help you manager your portfolio</p>
+				</div>
 			</div>
 		</div>
 
 		<!-- birds-eye-view -->
+		<div id="birds-eye-view" class="container">
+			<div class="row">
+				<div class="d-md-none"></div>
+				<div class="col-md-8">
+					<h2>Bird's-Eye View</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum ipsum nibh, vitae rhoncus metus iaculis vitae. Sed aliquet sagittis sapien, vitae molestie urna iaculis in. Suspendisse dapibus nisl ut malesuada iaculis. Quisque pharetra congue egestas. Aliquam molestie mattis turpis, nec pellentesque nulla porttitor sed.</p>
+					<p>Nullam quis pharetra ipsum. Suspendisse sed nibh leo. Nullam ullamcorper tortor nunc, vel iaculis tortor porta sit amet. Ut ante urna, eleifend et facilisis a, accumsan eget arcu. Suspendisse massa neque, fringilla vel eros nec, pharetra faucibus erat. Mauris nunc tellus, laoreet id laoreet non, condimentum eget eros.</p>
+				</div>
+				<div class="d-none d-md-block col-md-4 h-200">
+					<div class="centered-img">
+						<div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- rare-opportunities -->
 
