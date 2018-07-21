@@ -75,6 +75,73 @@
 				height: 200px;
 			}
 
+			/*----------------------
+				    rare-ops
+			  ----------------------*/
+
+			#rare-ops{
+				background-color: #f1f1f1;
+			}
+			#rare-ops .col-md-4{
+				height: 180px;
+				background-image: url('img/opportunity.jpg');
+				background-size: cover;
+				background-position: center center;
+			}
+
+			/*----------------------
+				    security
+			  ----------------------*/
+
+			#security{
+				text-align: center;
+			}
+			#security p{
+				text-align: left;
+			}
+			.zoom-img{
+				height: 10rem;
+				color: #fff;
+				position: relative;
+				overflow: hidden;
+				background-color: #333;
+			}
+			.zoom-bg{
+				position: absolute;
+				background-size: cover;
+				background-position: center center;
+				height: 8rem;
+				transition: 350ms ease;  
+    			-webkit-transition: 350ms ease;
+    			transform: scale(1,1);  
+				-webkit-transform: scale(1,1);
+				height: 100%;
+				width: 100%;
+				opacity: .8;
+			}
+			.zoom-img:hover .zoom-bg{
+				-webkit-transform: scale(1.075,1.075);
+    			transform: scale(1.075,1.075);
+    			opacity: .55;
+			}
+			.zoom-img .icon{
+				position: absolute;
+				font-size: 42px;
+			    height: 42px;
+			    width: 42px;
+			    left: calc(50% - 21px);
+			    top: calc(50% - 21px);
+			}
+			#zoom-img-1{
+				background-image: url('img/security.jpg');
+			}
+			#zoom-img-2{
+				background-image: url('img/security.jpg');
+			}
+			#zoom-img-3{
+				background-image: url('img/security.jpg');
+			}
+
 			/* Small devices (landscape phones, 576px and up) */
 			@media (min-width: 576px) {
 
@@ -95,13 +162,57 @@
 					padding-top: 2rem;
     				padding-bottom: 2rem;
 				}
+
+				/* rare opportunities */
+				#rare-ops .row{
+					position: relative;
+				}
+				#rare-ops .col-md-4{
+					position: absolute;
+					left: 0;
+					max-width: none;
+					height: 100%;
+					width: calc((100vw - 768px)/2 + 266px);
+				}
+				#rare-ops .col-md-8{
+					width: 100%;
+					display: block;
+					padding-right: calc((100vw - 768px)/2 + 45px);
+					max-width: calc((100vw - 768px)/2 + 492px);
+					padding-top: 2rem;
+					padding-bottom: 2rem;
+					position: relative;
+					left: calc((100vw - 768px)/2 + 282px);
+				}
 			}
 
 			/* Large devices (desktops, 992px and up) */
-			@media (min-width: 992px) { }
+			@media (min-width: 992px) {
+
+				/* rare opportunities */
+				#rare-ops .col-md-8{
+					max-width: calc((100vw - 992px)/2 + 620px);
+					padding-right: calc((100vw - 992px)/2 + 30px);
+					left: calc((100vw - 768px)/2 + 260px);
+				}
+				#rare-ops .col-md-4{
+					width: calc((100vw - 992px)/2 + 361px);
+				}
+			}
 
 			/* Extra large devices (large desktops, 1200px and up) */
-			@media (min-width: 1200px) { }
+			@media (min-width: 1200px) {
+
+				/* rare opportunities */
+				#rare-ops .col-md-8{
+					max-width: calc((100vw - 1200px)/2 + 750px);
+					padding-right: calc((100vw - 1200px)/2 + 75px);
+					left: calc((100vw - 768px)/2 + 230px);
+				}
+				#rare-ops .col-md-4{
+					width: calc((100vw - 1200px)/2 + 440px);
+				}
+			}
 
 		</style>
 
@@ -155,13 +266,17 @@
 		</div>
 
 		<!-- birds-eye-view -->
-		<div id="birds-eye-view" class="container">
+		<article id="birds-eye-view" class="container">
 			<div class="row">
 				<div class="d-md-none"></div>
 				<div class="col-md-8">
 					<h2>Bird's-Eye View</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum ipsum nibh, vitae rhoncus metus iaculis vitae. Sed aliquet sagittis sapien, vitae molestie urna iaculis in. Suspendisse dapibus nisl ut malesuada iaculis. Quisque pharetra congue egestas. Aliquam molestie mattis turpis, nec pellentesque nulla porttitor sed.</p>
-					<p>Nullam quis pharetra ipsum. Suspendisse sed nibh leo. Nullam ullamcorper tortor nunc, vel iaculis tortor porta sit amet. Ut ante urna, eleifend et facilisis a, accumsan eget arcu. Suspendisse massa neque, fringilla vel eros nec, pharetra faucibus erat. Mauris nunc tellus, laoreet id laoreet non, condimentum eget eros.</p>
+					<p>Crypto terrain can be difficult to map from the ground. Leveraging our experience, Pelican Capital will provide your with the higher level view that you need to get a clear image of the markets with out losing sight of the finer details. Our services include:</p>
+					<ul>
+						<li>Macro reports and long term trend analysis</li>
+						<li>Due diligence for single projects and entire market sectors</li>
+						<li>World class analysis compiled in house and aggregated from leading market experts and forecasters</li>
+					</ul>
 				</div>
 				<div class="d-none d-md-block col-md-4 h-200">
 					<div class="centered-img">
@@ -171,18 +286,74 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</article>
 
 		<!-- rare-opportunities -->
+		<article id="rare-ops" class="container-fluid">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-8">
+					<h2>Rare Opportunities</h2>
+					<p>Because Bitcoin trades in a highly technical pattern, bubbles can be easy to spot for the trained eye. But blink once and you can miss the opportunity of a lifetime. Pelican Capital offers a range of market tools and research that can help you to better time the market and maximize your gains. Our analysis and market research can help you spot long term inflection points and help maximize your investment with helpful tips for entry and exit points. You can feel comfortable making an investment and taking profits with our professional guidance on your side.</p>
+					<p>And in a market with more than 2000 publicly traded tokens it can be an enormous challenge to separate the wheat from the chaff. That’s why Pelican Capital will help supplement your research with daily market research updates into hot upcoming ICOs, technical analysis, news reports, and much much more. Quit scouring CoinMarketCap.com for the hottest token after it already mooned and stay ahead of the curve.</p>
+				</div>
+			</div>
+		</article>
 
 		<!-- security -->
+		<article id="security" class="container">
+			<h2>Security You Can Depend On</h2>
+			<h5>Donec finibus dapibus vulputate. Mauris sollicitudin molestie urna, eu finibus quam tempor ac.</h5>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="zoom-img">
+						<div class="zoom-bg" id="zoom-img-1"></div>
+						<div class="icon icon-lock"></div>
+					</div>
+					<h4>Cold Storage</h4>
+					<p>Our clients' wallets are always created offline, beyond the reach of hackers and nefarious actors.</p>
+				</div>
+				<div class="col-md-4">
+					<div class="zoom-img">
+						<div class="zoom-bg" id="zoom-img-2"></div>
+						<div class="icon icon-lock"></div>
+					</div>
+					<h4>Identity Protected</h4>
+					<p>Using our specialized equipment and transfering techniques, your assets can be totally anonymous and untraceable.</p>
+				</div>
+				<div class="col-md-4">
+					<div class="zoom-img">
+						<div class="zoom-bg" id="zoom-img-3"></div>
+						<div class="icon icon-lock"></div>
+					</div>
+					<h4>Exchange Logistics</h4>
+					<p>We help manage your trading accounts, multi-factor authentication and transfer of funds to mitigate risk.</p>
+				</div>
+			</div>
+		</article>
 
 		<!-- contact -->
 		<section id="contact-us">
 			<div class="container">
+				<!-- success message -->
+				<div id="contact-success">
+					<div>
+						<button type="button" class="close" aria-label="Close" id="success-close">
+				            <span aria-hidden="true">×</span>
+				        </button>
+					</div>
+					<h2>Thank You</h2>
+					<div>
+						<div id="checkmark-success">
+							<div class="icon icon-checkmark"></div>
+						</div>
+					</div>
+					<h4>We will be reaching out to you shortly</h4>
+				</div>
+				<!-- form -->
 				<h2>Contact Us</h2>
 				<form class="row justify-content-md-center">
-					<h5 class="col-md-8">Convallis a cras semper auctor neque. Amet nulla facilisi morbi tempus iaculis urna id volutpat lacus.</h5>
+					<h5 class="col-md-8">Speak to a consultant today, learn what Pelican Capital can do to assist you and your clients.</h5>
 					<fieldset class="col-md-8 col-lg-6">
 						<div class="form-group">
 							<input class="form-control" type="text" placeholder="Name" name="name">
@@ -205,6 +376,7 @@
 					</fieldset>
 					<fieldset class="col-md-8" style="text-align: center; margin-top: 1rem">
 						<button type="submit" class="btn btn-primary">Submit</button>
+						<div class="invalid-feedback has-error-min fade-out" id="submit-error">Please complete form</div>
 					</fieldset>
 				</form>
 			</div>
@@ -222,5 +394,74 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="js/bootstrap-validate/bootstrap-validate.min.js"></script>
+    <script>
+    	
+    	/*------------------------
+    		 form validation 
+    	  ------------------------*/
+
+    	// truth table object
+    	var formValidation = {
+    		name : false,
+    		email : false,
+    		phone : false,
+    		message : false
+    	}
+
+    	// validation rules
+    	bootstrapValidate('[name="name"]', "regex:^[a-z]([-']?[a-z]+)*( [a-z]([-']?[a-z]+)*)+$:Enter you full name", function(isValid){
+    		formValidation.name = isValid
+    	})
+    	bootstrapValidate('[name="email"]', 'email:Enter a valid email address', function(isValid){
+    		formValidation.email = isValid
+    	})
+    	bootstrapValidate('[name="phone"', "regex:^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$:Enter a valid phone number", function(isValid){
+    		formValidation.phone = isValid
+    	})
+    	bootstrapValidate('[name="message"', 'min:1:Please include a message', function(isValid){
+    		formValidation.message = isValid
+    	})
+
+    	// submission error element
+    	var submitError = document.getElementById('submit-error')
+
+    	// contact success
+    	var contactSuccess = document.getElementById('contact-success')
+    	var successCheckmark = document.getElementById('checkmark-success')
+
+    	// submission
+    	document.querySelector('#contact-us form')
+    		.addEventListener('submit', function(e){
+    			// prevent form submission
+    			e.preventDefault()
+    			// set the truth trigger
+    			var formIsValid = true
+    			// loop through the validation object and update the truth trigger
+    			for(var x in formValidation)
+    				if(!formValidation[x])
+    					formIsValid = false;
+    			// if form is validc
+    			if(formIsValid){
+    				// fake form submission
+    				contactSuccess.style.display = 'block'
+    				successCheckmark.className = 'fade-it-in'
+    			}else{
+    				// display error
+    				submitError.className = 'invalid-feedback has-error-min fade-in'
+    				setTimeout(function(){
+    					submitError.className = 'invalid-feedback has-error-min'
+    				}, 5000)
+    			}
+    			
+    		}, true)
+
+    	// close success message
+    	document.getElementById('success-close').addEventListener('click', function(){
+    		contactSuccess.style.display = 'none'
+    		successCheckmark.className = ''
+    	}, false);
+
+    </script>
 	</body>
 </html>
