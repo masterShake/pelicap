@@ -30,7 +30,7 @@
 				width: 100%;
 				height: 100%;
 				z-index: -1;
-			    background-image: url(img/pelican.jpeg);
+			    background-image: url(img/pelican.jpg);
 			    background-position: right bottom;
 			    background-size: 312% auto;
 				background-repeat: no-repeat;
@@ -49,6 +49,10 @@
 			/*----------------------
 				  birds eye view
 			  ----------------------*/
+
+			#birds-eye-view{
+				background-color: #f1f1f1;
+			}
 			#birds-eye-view .d-md-none{
 				height: 180px;
 				width: 100%;
@@ -79,9 +83,9 @@
 				    rare-ops
 			  ----------------------*/
 
-			#rare-ops{
+			/*#rare-ops{
 				background-color: #f1f1f1;
-			}
+			}*/
 			#rare-ops .col-md-4{
 				height: 180px;
 				background-image: url('img/opportunity.jpg');
@@ -156,7 +160,9 @@
 			@media (min-width: 768px) {
 
 				/* jumbotron */
-				/*.jumbotron*/
+				.jumbo-bg {
+					background-size: 52% auto;
+				}
 
 				/* birds-eye-view */
 				#birds-eye-view .col-md-8{
@@ -203,6 +209,11 @@
 
 			/* Extra large devices (large desktops, 1200px and up) */
 			@media (min-width: 1200px) {
+
+				/* jumbotron */
+				.jumbo-bg{
+					background-size: 80% auto;
+				}
 
 				/* rare opportunities */
 				#rare-ops .col-md-8{
@@ -267,22 +278,24 @@
 		</div>
 
 		<!-- birds-eye-view -->
-		<article id="birds-eye-view" class="container">
-			<div class="row">
-				<div class="d-md-none"></div>
-				<div class="col-md-8">
-					<h2>Bird's-Eye View</h2>
-					<p>Crypto terrain can be difficult to map from the ground. Leveraging our experience, Pelican Capital will provide your with the higher level view that you need to get a clear image of the markets with out losing sight of the finer details. Our services include:</p>
-					<ul>
-						<li>Macro reports and long term trend analysis</li>
-						<li>Due diligence for single projects and entire market sectors</li>
-						<li>World class analysis compiled in house and aggregated from leading market experts and forecasters</li>
-					</ul>
-				</div>
-				<div class="d-none d-md-block col-md-4 h-200">
-					<div class="centered-img">
-						<div>
-							<div></div>
+		<article id="birds-eye-view">
+			<div class="container">
+				<div class="row">
+					<div class="d-md-none"></div>
+					<div class="col-md-8">
+						<h2>Bird's-Eye View</h2>
+						<p>Crypto terrain can be difficult to map from the ground. Leveraging our experience, Pelican Capital will provide your with the higher level view that you need to get a clear image of the markets with out losing sight of the finer details. Our services include:</p>
+						<ul>
+							<li>Macro reports and long term trend analysis</li>
+							<li>Due diligence for single projects and entire market sectors</li>
+							<li>World class analysis compiled in house and aggregated from leading market experts and forecasters</li>
+						</ul>
+					</div>
+					<div class="d-none d-md-block col-md-4 h-200">
+						<div class="centered-img">
+							<div>
+								<div></div>
+							</div>
 						</div>
 					</div>
 				</div>
