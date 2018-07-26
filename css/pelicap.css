@@ -32,6 +32,9 @@
 	background: rgba(255,255,255,0.32);
 	border-color: #fff;
 }
+p,li{
+	font-weight: 300;
+}
 
 /*----------------------
 		 navbar
