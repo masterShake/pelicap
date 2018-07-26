@@ -42,7 +42,7 @@
 			  ----------------------*/
 
 			.swiper-container{
-				height: 400px;
+				height: 464px;
 			}
 			.jumbotron{
 				border-radius: 0;
@@ -232,12 +232,25 @@
 
 
 			 /* Small devices (landscape phones, 576px and up) */
-			@media (min-width: 576px) {  }
+			@media (min-width: 576px) {
+
+				/* jumbotron */
+				.jumbotron{
+					padding-top: 24px;
+					padding-bottom: 24px;
+				}
+				.swiper-container{
+					height: 376px;
+				}
+			}
 
 			/* Medium devices (tablets, 768px and up) */
 			@media (min-width: 768px) {
 
 				/* jumbotron */
+				.jumbotron{
+					padding-top: 42px;
+				}
 				.swiper-button-prev{
 					font-size: 38px;
 					left: calc(50% - 370px);
@@ -309,6 +322,9 @@
 			@media (min-width: 1200px) { 
 
 				/* jumbotron */
+				.jumbotron{
+					padding-top: 64px;
+				}
 				.swiper-button-prev{
 					font-size: 38px;
 					left: calc(50% - 600px);
@@ -386,7 +402,7 @@
 						<hr class="my-4">
 					  	<p>Trade the hype</p>
 					  	<p class="lead">
-					    	<a class="btn btn-secondary btn-lg" href="#" role="button">Learn more</a>
+					    	<a class="btn btn-secondary btn-lg" href="#our-strategy" role="button">Learn more</a>
 					  	</p>
 					</div>
 				</div>
@@ -536,7 +552,7 @@
 					  	</div>
 					</fieldset>
 					<fieldset class="col-md-8" style="text-align: center; margin-top: 1rem">
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" class="btn btn-outline-secondary">Submit</button>
 						<div class="invalid-feedback has-error-min fade-out" id="submit-error">Please complete form</div>
 					</fieldset>
 				</form>
